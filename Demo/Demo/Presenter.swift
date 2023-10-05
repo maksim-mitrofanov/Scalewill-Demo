@@ -13,6 +13,10 @@ final class Presenter: ObservableObject {
     @Published private(set) var presentedItems = [DataModel]()
         
     func fetchLatestData() async {
+        await MainActor.run {
+            presentedItems = []
+        }
+        
         do {
             let data = try await networkService.fetchLatestData()
             await MainActor.run {

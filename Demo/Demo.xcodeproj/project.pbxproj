@@ -19,6 +19,7 @@
 		4C0816602ACDC1D50035D96D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08165F2ACDC1D50035D96D /* ColorExtension.swift */; };
 		4C0816642ACDC5D10035D96D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0816632ACDC5D10035D96D /* DataModel.swift */; };
 		4C0816662ACDD7E00035D96D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0816652ACDD7E00035D96D /* AppConstants.swift */; };
+		4CA940362ACE8B3100AF6D2F /* DetailedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA940352ACE8B3100AF6D2F /* DetailedScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4C08165F2ACDC1D50035D96D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		4C0816632ACDC5D10035D96D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		4C0816652ACDD7E00035D96D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		4CA940352ACE8B3100AF6D2F /* DetailedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				4C0816302ACD8AA80035D96D /* HomeScreen.swift */,
 				4C08163C2ACD8B370035D96D /* LaunchScreen.swift */,
+				4CA940352ACE8B3100AF6D2F /* DetailedScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				4C0816312ACD8AA80035D96D /* HomeScreen.swift in Sources */,
 				4C0816662ACDD7E00035D96D /* AppConstants.swift in Sources */,
 				4C08162F2ACD8AA80035D96D /* DemoApp.swift in Sources */,
+				4CA940362ACE8B3100AF6D2F /* DetailedScreen.swift in Sources */,
 				4C08165A2ACD8E4F0035D96D /* NetworkService.swift in Sources */,
 				4C08163D2ACD8B370035D96D /* LaunchScreen.swift in Sources */,
 				4C08165C2ACD8EC10035D96D /* Presenter.swift in Sources */,

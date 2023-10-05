@@ -13,7 +13,7 @@ final class NetworkService: ObservableObject {
         var result = [DataModel]()
         
         try await Task.sleep(nanoseconds: AppConstants.networkRequestDelayInNanoseconds)
-        result = [.template1, .template2, .template3]
+        result = [.template1, .template2, .template3].shuffled()
         
         return result
     }

@@ -15,14 +15,9 @@ struct HomeScreen: View {
             if presenter.presentedItems.isEmpty {
                 ProgressView()
             } else {
-                VStack {
-                    ForEach(presenter.presentedItems) { item in
-                        Text(item.name)
-                    }
-                }
+                fetchedDataList
             }
         }
-        .padding()
         .navigationTitle(Bundle.applicationName)
         .navigationBarBackButtonHidden(true)
         .navigationBarTitleDisplayMode(.large)
@@ -33,12 +28,41 @@ struct HomeScreen: View {
     private func toolbarItems() -> some ToolbarContent {
         ToolbarItem(placement: .topBarTrailing) {
             Button("Load data") {
-                
+                Task {
+                    await presenter.fetchLatestData()
+                }
             }
+        }
+    }
+    
+    private var fetchedDataList: some View {
+        VStack {
+            List {
+                ForEach(presenter.presentedItems) { item in
+                    NavigationLink {
+                        DetailedScreen(model: item)
+                    } label: {
+                        HStack {
+                            Text(item.name)
+                            Spacer()
+                            Text(item.price.description + "$")
+                        }
+                    }
+                }
+            }
+            .listStyle(.insetGrouped)
         }
     }
 }
 
 #Preview {
-    HomeScreen()
+    let presenter = Presenter()
+    
+    let view = NavigationStack  {
+        HomeScreen()
+            .environmentObject(presenter)
+            .task { await presenter.fetchLatestData() }
+    }
+    
+    return view
 }
