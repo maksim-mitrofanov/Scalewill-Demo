@@ -23,7 +23,7 @@
 ## Demo 
 | iPhone 15 Pro |
 | -------- |
-| <video src="https://github.com/maksim-mitrofanov/Scalewill-Demo/assets/87092187/0b476dd1-0eba-4a87-a19a-530e7532bbec"> |
+| <video src="https://github.com/maksim-mitrofanov/Scalewill-Demo/assets/87092187/fea4bdf7-38fe-4657-9173-50137e956d58"> |
 
 
 
